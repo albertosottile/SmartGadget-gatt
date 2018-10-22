@@ -36,12 +36,12 @@ class AnyDevice(gatt.Device):
         b = 17.27
         c = 237.7
         gamma = math.log(hum / 100) + (b * temp)/(c + temp)
-        return (c * gamma)/(b - gamma) 
+        return (c * gamma)/(b - gamma)
 
-    def characteristic_enable_notification_succedeed(self, characteristic):
+    def characteristic_enable_notifications_succeeded(self, characteristic):
         print("Subscription to change notifications - SUCCESS")
 
-    def characteristic_enable_notification_failed(self, characteristic):
+    def characteristic_enable_notifications_failed(self, characteristic):
         print("Subscription to change notifications - FAIL!")
 
     def characteristic_value_updated(self, characteristic, value):
