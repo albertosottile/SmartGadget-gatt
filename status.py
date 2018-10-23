@@ -47,7 +47,7 @@ class AnyDevice(gatt.Device):
             self.t_value = value
         elif characteristic.uuid == h_uuid:
             self.h_value = value
-            print("Temperature (C): %.2f -  Humidity (%%): %.2f - Dew point (C): %.2f" % (self.t_value, self.h_value, self.dew_point(self.t_value, self.h_value)))
+            print("Temperature (°C): %.1f -  Humidity (%%): %.0f - Dew point (°C): %.1f" % (self.t_value, self.h_value, self.dew_point(self.t_value, self.h_value)))
             self.disconnect()
             self.manager.stop()
 
