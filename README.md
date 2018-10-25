@@ -16,9 +16,10 @@ sm = smartgadget.SmartGadget(adapter_name='hci0', device_mac='E9:28:88:82:2B:E2'
 
 print("SmartGadget: Temperature (°C): %.1f" % (sm.temperature())
 print("SmartGadget: Humidity (%%): %.0f" % (sm.humidity())
-print("Dew point (°C): %.1f" % (sm.dew()))
+print("SmartGadget Dew point (°C): %.1f" % (sm.dew()))
 ```
 
+See the documentation of the Bluetooth GATT SDK for info about device scanning and how to get the MAC address of the sensor.
 Tested on a Raspberry Pi Model 3 with Raspbian 9.
 See the gatt-examples folder for further details and low-level code. 
 
