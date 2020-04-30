@@ -1,0 +1,7 @@
+.*
+*.py[cd]
+build
+dist
+venv
+*.egg-info
+!.gitignore

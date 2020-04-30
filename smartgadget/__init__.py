@@ -87,4 +87,3 @@ class AnyDevice(gatt.Device):
 
     def read_hum(self):
         return self.h_value
-
